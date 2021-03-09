@@ -1,0 +1,302 @@
+
+body.back-np{
+	background-color: #F4F4F4!important; 
+}
+
+.cont-np{
+	background-color: #F1F1F1;
+    width: 100%;
+    padding: 15px 15px 40px;
+    margin: 0;
+}
+
+.section-title{
+	padding: 0;
+}
+
+.cont-np .principal-title, .text-center-np {
+    line-height: 31px;
+}
+
+.cont-np img {
+    display: block;
+    margin: 0 auto;
+}
+
+.texto-destacado{
+	color: #0060D0;
+}
+
+.texto-destacado2{
+	color: #9CFF00;
+}
+
+.section-step{
+	background-color: #fff;
+	border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    bottom: 2rem;
+}
+
+.step {
+    display: flex;
+}
+
+.num-step{
+	width: 140px;
+    padding-top: 5px;
+}
+
+.cont-step div {
+    margin-bottom: 0.5rem;
+}
+
+.green-text-np{
+	color: #21CF7B!important;
+	font-size: 48px;
+}
+
+.cont-desc-socio{
+	background-color: #133265;
+	border-radius: 10px 0 0 10px;
+    padding: 1rem 3rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.title-white{
+	color: #fff!important;
+	text-transform: initial;
+}
+
+.title-white span {
+    font-weight: 400;
+}
+ 
+.cont-desc-socio a.btn {
+    margin-top: 2rem;
+    width: 75%;
+    float: left;
+    box-shadow: none;
+}
+
+.cont-login{
+	background-color: #0060D0;
+	border-radius: 0 10px 10px 0;
+	padding: 3rem;
+	display: flex;
+    align-items: center;
+}
+
+.cont-login .form-group.setrelative {
+    padding: 0;
+    position: relative;
+}
+
+.cont-login form {
+    padding: 0 4rem;
+}
+
+.cont-login form label, .search-hotel form label{
+    color: #9CFF00!important;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.cont-login form p, .cont-login form a span {
+    color: #fff!important;
+    margin-top: 1rem;
+}
+
+.cont-login form a span{
+	font-weight: 700;
+}
+
+.cont-login form .btn-success {
+    width: 100%!important;
+    box-shadow: none;
+}
+
+.cont-login>div{
+	width: 100%;
+}
+
+.cont-login p{
+	font-size: 12px;
+}
+
+.cont-desc-serch{
+	display: flex;
+	align-items: center;
+}
+
+.search-hotel {
+    margin-top: 2rem;
+    background-color: #0060D0;
+    padding: 4rem 7rem;
+    border-radius: 10px;
+}
+
+.label-fechas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-login{
+	display: block;
+	margin: auto;
+}
+
+.section-video{
+	position: relative;
+    margin-top: 2rem;
+    height: 528px;
+    display: flex;
+    align-items: center;
+}
+
+.section-video>div:first-child {
+    padding: 0;
+}
+
+.cont-video{
+	position: absolute;
+}
+
+.cont-desc-video{
+	background-color: #fff;
+	/*position: absolute;*/
+    right: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.desc-video {
+    padding: 2rem 1rem 2rem 35%;
+}
+
+.text-center-np{
+	font-size: 32px;
+	color: #133265;
+	text-align: center;
+	font-weight: 400;
+}
+
+.cont-desc-video hr{
+	margin: 2rem 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a:nth-child(2) {
+    margin: 0 1rem;
+}
+
+/*MEDIA QUERIES PARA NP*/
+@media (min-width: 1200px){
+	.section-video {
+    	margin-top: 1rem;
+	}
+}
+
+@media (max-width: 991px){
+	.section-video {
+    	margin-top: 5rem;
+	}
+
+	.cont-login form {
+	    padding: 0;
+	}
+}
+
+@media (max-width: 767px){
+	.step {
+    	display: block;
+	}
+	.num-step {
+    	width: fit-content;
+    	margin: 0 auto;
+	}
+
+	.cont-desc-socio {
+    	border-radius: 10px 10px 0 0;
+    	height: 380px;
+	}
+
+	.cont-login {
+	    background-color: #0060D0;
+	    border-radius: 0 0 10px 10px;
+	}
+
+	.cont-desc-socio a.btn {
+	    width: 100%;
+	}
+
+	.img-login{
+		display: none;
+	}
+
+	.section-video {
+	    position: relative;
+	    margin-top: 2rem;
+	    height: auto;
+	    display: block;
+	    align-items: center;
+	}
+
+	.cont-video{
+		position: inherit;
+	}
+
+	.cont-desc-video {
+	    position: inherit;
+	    right: 0;
+	    z-index: 0;
+	    border-radius: 0 0 10px 10px;
+	    width: inherit;
+	}
+
+	.desc-video {
+	    padding: 2rem 1rem;
+	}
+}
+
+@media (max-width: 575px){
+	.cont-np .principal-title, .text-center-np {
+	    font-size: 25px;
+	}
+
+	.section-step, #section-user-logout {
+	    margin: 0;
+	}
+
+	.search-hotel {
+	    margin: 1rem 15px 0;
+	    padding: 4rem 3rem;
+	}
+
+	.cont-desc-video {
+	    margin: 0 15px;
+	    flex: inherit;
+	}
+}
+
+@media (max-width: 480px){
+	.cont-login {
+	    padding: 3rem 0;
+	}
+
+	.cont-login form {
+	    padding: 0 15px;
+	}
+
+	.search-hotel {
+	    padding: 4rem 15px;
+	}
+}
+/* FIN MEDIA QUERIES PARA NP*/

@@ -1,0 +1,520 @@
+p{
+	color: #333; 
+}
+
+/*NAVBAR*/
+.nav-link::after{
+	color: #DB2761;
+}
+
+.nav-link::before{
+	background: #DB2761;
+}
+
+.nav-item.active .nav-link{
+	color: #DB2761;
+}
+
+.nav-item.active .nav-link::before{
+	background: #DB2761;
+	color: #fff;
+}
+
+.navbar-btn {
+    background: #DB2761;
+    color: #fff;
+}
+
+.navbar-btn:hover{
+	text-decoration: none;
+}
+
+.navbar-btn:before {
+    background: #470D47; 
+}
+
+.navbar-btn:hover:before{
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.modal-header .close{
+	text-shadow: none;
+}
+
+.modal-header i{
+    background: -webkit-linear-gradient(#BC082F 0%, #060659 100%);
+    background: -o-linear-gradient(#BC082F 0%, #060659 100%);
+    background: linear-gradient(#BC082F 0%, #060659 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+/*FIN NAVBAR*/
+
+/*REGISTRO*/
+#confirmation{
+	margin-top: 2rem;
+}
+
+#BannerBackground, .HeaderBanner #BannerBackground{
+    background: -webkit-linear-gradient(right, #060659 0%, #BC082F 100%);
+	background: -o-linear-gradient(right, #060659 0%, #BC082F 100%);
+    background: linear-gradient(to left, #060659 0%, #BC082F 100%);
+}
+
+#BannerBackground {
+    height: 250px;
+}
+
+.logoLL {
+    position: absolute;
+    top: 110px;
+    width: 250px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.folio-number{
+	color: #DB2761;
+}
+/*FIN REGISTRO*/
+
+/*HOME*/
+/*home carousel*/
+#Programas{
+    padding-top: 3rem;
+}
+
+.filtro {
+	background: -webkit-linear-gradient(top left, rgba(27,27,109,0.5) 0%, rgba(27,27,109,0.6) 30%, rgba(176,22,48,0.8) 100%);
+	background: -o-linear-gradient(top left, rgba(27,27,109,0.5) 0%, rgba(27,27,109,0.6) 30%, rgba(176,22,48,0.8) 100%);
+	background: linear-gradient(to bottom right, rgba(27,27,109,0.5) 0%, rgba(27,27,109,0.6) 30%, rgba(176,22,48,0.8) 100%);
+}
+
+.DateCarousel{
+	font-size: 60px;
+	color: #fff;
+	margin-top: 2rem;
+}
+
+.btn-shadow {
+    background: #DB2761;
+    color: #fff;
+}
+
+.btn-shadow:hover {
+    color: #fff;
+   	-webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+   	box-shadow: 0px 11px 30px rgba(182, 7, 49, 0.42);
+}
+
+@media(max-width: 1024px){
+	.logoExpo img {
+	    width: 250px;
+	}
+}
+
+@media (max-width: 767px){
+	.DateCarousel{
+		font-size: 50px;
+		margin-top: 1rem;
+	}
+	
+	.contador {
+	    margin: 1rem auto;
+	}
+
+	#HomeCarousel .carousel-indicators li {
+	    background: #fff;
+	    border-top: 0;
+	    border-bottom: 0;
+	}
+}
+
+@media (max-width: 425px){	
+	.contador {
+	    margin: 2rem auto;
+	}
+
+	.DateCarousel {
+	    font-size: 25px;
+		margin-top: 2rem;	    
+	}
+
+	.contador span {
+	    font-size: 45px;
+	}
+}
+
+@media (max-width: 375px){
+	.logoExpo img {
+	    width: 220px;
+	}
+}
+/*fin home carousel*/
+
+/*programas educativos*/
+.numberTitle, .title{
+	color: #DB2761!important;
+}
+
+#TravelShow{
+	margin-top: 0;
+	background: #fff;
+}
+
+.btn-floating {
+    border: 3px solid #BC082F;
+    color: #060659;
+}
+
+.title+p{
+	color: #333!important;
+}
+
+.btn-floating:hover{
+ 	border-color: #BC082F;
+}
+
+@-webkit-keyframes circleArrow{
+	0%{		
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+		border: 4px solid #BC082F;
+	}
+
+	100%{
+		transform: scale(1);
+		border: 3px solid #BC082F;
+	}
+}
+
+.filtro-carusel {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(bottom, rgba( 0, 20, 94, 0.65) 0%, rgba( 0, 20, 94, 0.14) 100%);
+    background: -o-linear-gradient(bottom, rgba( 0, 20, 94, 0.65) 0%, rgba( 0, 20, 94, 0.14) 100%);
+    background: linear-gradient(to top, rgba( 0, 20, 94, 0.65) 0%, rgba( 0, 20, 94, 0.14) 100%);
+    position: absolute;
+}
+
+.btn-floating:hover .fa-arrow-right, .btn-floating:hover .fa-arrow-left{
+	color: #060659;
+}
+
+#multi-item-example .card-title{
+	color: #DB2761;
+}
+
+#multi-item-example .card p{
+	color: #333;
+}
+
+@media (max-width: 767px) {
+	.carousel-indicators li {
+	    background: #470D47;
+	}
+}
+/*fin programas educativos*/
+
+/*experiencia 360°*/
+#Experiencia {
+    background: #F5F5F5;
+}
+.cont-link-more-info{
+	margin-top: 4rem;
+}
+
+.link-more-info{
+    color: #DB2761;
+}
+
+.link-more-info:hover{
+	color: #DB2761;
+}
+
+.link-more-info::after, .link-more-info::before {
+    background-color: #DB2761;
+}
+
+#Experiencia .title{
+	font-size: 36px;
+}
+
+#Experiencia .carousel-inner {
+    width: 100%;
+}
+
+#Experiencia .card {
+    background: transparent;
+    border: 0;
+    border-radius: none;
+    color: #fff;
+    width: 278px;
+}
+
+#Experiencia .card-title {
+    color: #DB2761;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+#Experiencia .card p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#Experiencia .controls-top {
+    display: flex;
+    width: 100%;
+    height: auto;
+    float: inherit;
+}
+
+#Experiencia .controls-top>div {
+    width: 100%;
+    display: flex;
+    float: right;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+#Experiencia .btn-floating:first-child {
+    margin-right: 2rem;
+}
+
+.cont-card-img{
+	box-shadow: 5px 8px 25px rgba(32, 32, 35, 0.1);	
+}
+
+@media (max-width: 767px){
+	.cont-link-more-info {
+	    margin-top: 0;
+	    margin-bottom: 2rem;
+	    position: relative;
+	}
+
+	#Experiencia .card{
+		width: 100%;
+	}
+
+	#Experiencia .controls-top{
+		display: none;
+	}
+	
+	#Experiencia .carousel-indicators{
+		position: relative;
+	}
+
+	#Experiencia .carousel-indicators li {
+	    width: 16px;
+	    height: 16px;
+	    border-radius: 50%;
+	    border-top: none;
+	    border-bottom: none;
+	    margin-top: 2rem;
+	}
+}
+/*fin experiencia 360°*/
+
+/*qué hacer en la expo*/
+.title-list{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.list-que-hacer {
+  	list-style: none;
+  	counter-reset: list-expo;
+}
+
+.list-que-hacer li {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 2rem;
+    border-left: 3px solid #09233A;
+    position: relative;
+    counter-increment: list-expo;
+}
+
+.list-que-hacer li:last-child{
+	border: none;
+}
+
+.list-que-hacer li::before {
+  	content: counter(list-expo) " -";
+  	color: #DB2761;
+  	font-weight: bold;
+  	position: absolute;
+    left: -50px;
+}
+
+.list-que-hacer li::after{
+	content: '';
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 0px;
+	left: -14px;
+    z-index: 1;
+    background: linear-gradient(180deg, #BC082F 0%, #060659 100%);
+    border-radius: 50%;
+}
+
+.list-que-hacer li:last-child::after{
+	left: -11px;
+}
+
+.list-que-hacer p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px){
+	.list-que-hacer {
+	    margin-left: -25px;
+	}
+}
+/*fin que hacer en la expo*/
+
+/*banner*/
+#BannerInspirate {
+    background: linear-gradient(270deg, #060659 0%, #BC082F 105.77%);
+}
+.banner p:nth-child(2){
+	color: #fff;
+}
+
+[data-aos="text-anim1"].aos-animate {
+	animation: animacionText1 5s linear;
+    animation-fill-mode: forwards;
+}
+
+[data-aos="text-anim2"].aos-animate {
+	animation: animacionText2 5s linear;
+    animation-fill-mode: forwards;
+}
+
+[data-aos="text-anim3"].aos-animate {
+	opacity: 0;
+	animation: animacionText3 5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animacionText1{
+	0%, 20% {
+    	opacity: 1;
+	}
+	40%, 80%{
+	    opacity: 0;
+	}
+	100% {
+	    opacity: 1;
+	}
+}
+
+@keyframes animacionText2{
+	0%, 20% {
+	    opacity: 0;
+	}
+	40%, 60% {
+	    opacity: 1;
+	}
+	80% {
+	    opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes animacionText3{
+	0%, 40% {
+	    opacity: 0;
+	}
+	60%, 100% {
+	    opacity: 1;
+	}
+}
+/*fin banner*/
+
+/*conferencias*/
+#patrocinadores .title{
+	text-transform: inherit;
+}
+
+.date-speaker{
+    color: #DB2761;
+}
+
+.date-speaker::before {
+    background-color: #DB2761;
+}
+
+#zonaConferencias .carousel-item .row .col-md-6:first-child {
+    border-right: 1px solid #470D47;
+}
+
+#zonaConferencias .carousel-indicators li {
+    background: #470D47;
+}
+/*fin conferencias*/
+
+/*nuestras escuelas y marcas*/
+#patrocinadores {
+    background: -webkit-linear-gradient(right, #060659 0%, #BC082F 100%);
+    background: -o-linear-gradient(right, #060659 0%, #BC082F 100%);
+    background: linear-gradient(to left, #060659 0%, #BC082F 100%);
+}
+
+#patrocinadores .carousel-indicators li {
+    background: #fff;
+}
+/* fin nuestras escuelas y marcas*/
+
+/*ubicación*/
+.info-ubicacion p:first-child {
+    color: #DB2761;
+}
+/*fin ubicación*/
+/*FIN HOME*/
+
+/*FOOTER*/
+#footerPrincipal{
+	background: #01001F;
+}
+
+.footer .rs{
+	background: #fff;
+}
+
+.footer .rs {
+    background: #fff;
+    padding: 3px;
+    width: 30px;
+    display: inline-flex;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.footer .rs a i, .modal-menu a i{
+    background: -webkit-linear-gradient(#BC082F 0%, #060659 100%);
+    background: -o-linear-gradient(#BC082F 0%, #060659 100%);
+    background: linear-gradient(#BC082F 0%, #060659 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 991px){
+	.footer .rs{
+		margin: 0 0.2rem;
+	}
+}
+/*FIN FOOTER*/

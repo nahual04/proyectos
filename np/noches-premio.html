@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Noches premio</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ 	<link rel="icon" href="favicon.ico" type="image/x-icon">
+ 	<link rel="stylesheet" href="css/shards.css">
+ 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="css/noches-premio.css">
+</head>
+<body class="back-np">
+	
+	<!-- IMAGEN Y DESCRIPCIÓN DE NP -->
+	<div class="cont-np">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-12 d-md-flex">
+					<img src="images/noches-premio/noches-premio.svg" alt="noches premios" class="img-fluid">
+				</div>
+				<div class="col-md-6 col-sm-12 section-title">
+		            <div class="row">
+		            	<div class="col">
+		            		<h1 class="principal-title mx-0 text-uppercase">Noches premio</h1>
+		            		<div class="separator-left"></div>
+		            	</div>
+		            </div>
+		            <div class="row">
+		            	<div class="col">
+		            		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet enim enim. Suspendisse tortor nisl, dictum sodales tortor nec, <span class="texto-destacado">pretium suscipit nunc</span>. Nunc porta iaculis nisl, non tincidunt tortor consequat sed. Aenean vitae aliquet odio. Praesent ullamcorper volutpat eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla magna felis, volutpat at egestas nec, dignissim et ipsum.</p>
+		            	</div>
+		            </div>
+		        </div>
+			</div>
+		</div>
+	</div>
+	<!-- FIN IMAGEN Y DESCRIPCIÓN DE NP -->
+
+	<div class="container">
+		<!-- PASOS NP -->
+		<div class="row section-step">
+			<div class="col">
+				<div class="step">
+					<div class="num-step">
+						<h4 class="green-text-np">01</h4>
+					</div>
+					<div class="desc-step">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet enim enim. Suspendisse tortor nisl, dictum sodales tortor nec, <span class="texto-destacado">pretium suscipit nunc.</span></p>
+					</div>
+				</div>
+
+				<div class="step">
+					<div class="num-step">
+						<h4 class="green-text-np">02</h4>
+					</div>
+					<div class="desc-step">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet enim enim. Suspendisse tortor nisl, dictum sodales tortor nec, pretium suscipit nunc.</p>
+					</div>
+				</div>
+				<div class="step">
+					<div class="num-step">
+						<h4 class="green-text-np">03</h4>
+					</div>
+					<div class="desc-step">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet enim enim. Suspendisse tortor nisl, dictum sodales tortor nec, pretium suscipit nunc.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN PASOS NP -->
+		
+		<!-- USUARIO LOGOUT -->
+		<div class="row" id="section-user-logout">
+			<!-- ¿YA ERES SOCIO? -->
+			<div class="col-md-6 col-sm-12 cont-desc-socio">
+				<div>
+					<h5 class="title-white">¡Hola! <span>¿Ya eres socio?</span></h5>
+					<p>Lorem ipsum dolor sit amet, <span class="texto-destacado2">consectetur adipiscing elit.</span> Morbi sit amet enim enim. Suspendisse tortor nisl, dictum sodales tortor nec, pretium suscipit nunc. </p>
+					<a href="#" class="btn btn-primary btn-pill btn-block">Conócenos</a>
+				</div>
+			</div>
+			<!-- FIN ¿YA ERES SOCIO? -->
+
+			<!-- LOGIN -->
+			<div class="col-md-6 col-sm-12 cont-login">
+				<div>
+					<form class="checkout-gift-noF">
+				     	<div class="form-group setrelative">
+				        	<label>Correo electrónico</label>
+				        	<input type="text" class="form-control" autocomplete="off" id="login-email-modal" name="login-email-modal" placeholder="Correo electrónico" maxlength="50">
+				        
+				        	<label>Contraseña</label>
+				        	<input type="password" class="form-control mb-0 pwd" autocomplete="off" id="login-password-modal" name="login-password-modal" placeholder="Contraseña" maxlength="15">
+				        	<button class="btn btn-default reveal" type="button">
+				          	<i id="move_details_icon_eye" class="fas fa-eye-slash"></i>
+				       		</button>
+				        	
+				      	</div>
+				      	<a href="{{ path('entity.node.canonical', {'node': 20}) }}" id="password-recovery-link">
+				        	<p class="text-center">Reestablecer contraseña</p>
+				      	</a>
+				      	<button type="button" id="log_int_modal" class="btn btn-success col-md-12 btn-pill mx-auto">Entrar</button>
+						<p class="text-center">¿Deseas ser socio?
+							<a href="{{ path('entity.node.canonical', {'node': 17}) }}" id="affiliation-login-link">
+	          					<span>Regístrate</span>
+	          				</a>
+	          			</p>
+	    			</form>
+				</div>
+			</div>
+			<!-- FIN LOGIN -->
+		</div>
+		<!-- FIN USUARIO LOGOUT -->
+		
+		<!-- USUARIO LOGUEADO -->
+		<!-- <div class="row" id="section-user-login">
+			<div class="col-md-6 col-sm-12 cont-desc-serch">
+				<div>
+					<div class="row">
+						<div class="col">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet enim enim. Suspendisse tortor nisl, dictum sodales tortor nec, pretium suscipit nunc. Nunc porta iaculis nisl, non tincidunt tortor consequat sed. Aenean vitae aliquet odio. Praesent ullamcorper volutpat eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla magna felis, volutpat at egestas nec, dignissim et ipsum.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col search-hotel">
+							<form action="hotel">
+								<label>Viaja a dónde quieras</label>
+								<input type="text" class="form-control" autocomplete="" id="" name="name-hotel" placeholder="Elige tu hotel o destino" maxlength="50">
+					
+								<div class="label-fechas mt-2">
+									<label>Llegada</label> <label>Salida</label>
+								</div>
+								<input type="date" class="form-control" autocomplete="" id="" name="name-hotel" placeholder="" maxlength="50">
+								<button type="button" id="log_int_modal" class="btn btn-success btn-pill mx-auto btn-search-hotel" data-toggle="modal" data-target="#ModalAvisoNP">Buscar</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 img-login">
+				<img src="images/noches-premio/img-login.jpg" alt="noches premio" class="img-fluid">
+			</div>
+		</div> -->
+		<!--FIN USUARIO LOGUEADO -->
+
+		<!-- MODAL SALIR DE CITY PREMIOS -->
+
+		<div class="modal fade" id="ModalAvisoNP" tabindex="-1" role="dialog" aria-labelledby="ModalMasInformacionLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        
+		      </div>
+		      <div class="modal-body">
+		        <div class="row">
+		        	<div class="col">
+		        		<p class="text-modal">Estás a punto de salir de City Premios.</p>
+		        		<p class="text-modal">¿Estás de a cuerdo con esto?</p>
+		        	</div>
+		        </div>
+		        <div class="row">
+		          	<div class="offset-md-2 col-md-4 col-sm-12 mt-2">
+		          		<button type="button" id="" class="btn btn-success btn-pill">Sí</button>
+		          	</div>
+		          	<div class="col-md-4 col-sm-12 mt-2">
+		          		<button type="button" id="" class="btn btn-danger btn-pill">No</button>
+		          	</div>
+	        	</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- FIN MODAL SALIR DE CITY PREMIOS -->
+
+		<!-- VIDEO Y DESCRIPCIÓN -->
+		<div class="row section-video">
+			<div class="col-md-6 col-sm-12 cont-video">
+				<div class="embed-responsive embed-responsive-16by9">
+					<video src="images/SampleVideo_1280x720_2mb.mp4" class="video-np" type="video/mp4" controls></video>
+					<!-- <iframe width="655" height="368" src="https://www.youtube.com/embed/KhFVRMEZvfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+				</div>
+			</div>
+			<div class="col-md-9 col-sm-12 offset-md-3 cont-desc-video">
+				<div class="desc-video">
+
+					<h1 class="text-center-np">Experiencias en noches premio</h1>
+					<img src="images/noches-premio/separador-np.svg" alt="" class="d-block mx-auto mb-3 img-fluid">
+
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet enim enim. Suspendisse tortor nisl, dictum sodales tortor nec, pretium suscipit nunc. Nunc porta iaculis nisl, non tincidunt tortor consequat sed. Aenean vitae aliquet odio. <span class="texto-destacado">Praesent ullamcorper volutpat eros.</span> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla magna felis, volutpat at egestas nec, dignissim et ipsum.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit
+					</p>
+
+					<hr>
+	
+					<div class="social-media">
+						<a href="#" target="_blank" title="Facebook" class="" rel="noopener">
+                        	<img src="images/btn-facebook.svg" alt="Compartir en facebook" >
+                        </a>
+                        <a href="#" target="_blank" title="Twitter" class="" rel="noopener">
+                            <img src="images/btn-twitter.svg" alt="Compartir en twitter" >
+                        </a>
+                        <a href="#" target="_blank" title="WhatsApp" class="" rel="noopener">
+                            <img src="images/btn-whatsapp.svg" alt="Compartir en whatsapp" >
+                        </a>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN VIDEO Y DESCRIPCIÓN -->
+	</div>
+	
+	<!-- espacios: no copiar estas etiquetas -->
+	<br><br><br><br><br><br>
+	<!--fin espacios: no copiar estas etiquetas -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/shards.min.js"></script>
+	<script src="js/demo.min.js"></script>
+	<script src="js/main.js"></script> 
+</body>
+</html>
